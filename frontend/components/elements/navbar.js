@@ -36,7 +36,7 @@ const Navbar = ({ navbar }) => {
               {navbar.links.map((navLink) => (
                 <li key={navLink.id}>
                   <CustomLink link={navLink}>
-                    <div className="hover:text-gray-900 px-2 py-1">
+                    <div className="hover:text-indigo-500 transition duration-500 ease-in-out px-2 py-1">
                       {navLink.text}
                     </div>
                   </CustomLink>

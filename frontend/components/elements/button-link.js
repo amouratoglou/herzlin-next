@@ -9,7 +9,7 @@ const ButtonContent = ({ button, appearance, compact }) => {
     <div
       className={classNames(
         // Common classes
-        "block w-full lg:w-auto text-center uppercase tracking-wide font-semibold text-base md:text-sm border-2 rounded-md",
+        "block w-full lg:w-auto text-center uppercase transition duration-500 ease-in-out tracking-wide font-semibold text-base md:text-sm border-2 rounded-md",
         // Full-size button
         {
           "px-8 py-4": compact === false,
@@ -20,19 +20,19 @@ const ButtonContent = ({ button, appearance, compact }) => {
         },
         // Specific to when the button is fully dark
         {
-          "bg-primary-600 text-white border-primary-600": appearance === "dark",
+          "hover:bg-indigo-900 hover:border-indigo-900 bg-primary-600 text-white border-primary-600": appearance === "dark",
         },
         // Specific to when the button is dark outlines
         {
-          "text-primary-600 border-primary-600": appearance === "dark-outline",
+          "hover:bg-indigo-600 hover:border-indigo-600 hover:text-white text-primary-600 border-primary-600": appearance === "dark-outline",
         },
         // Specific to when the button is fully white
         {
-          "bg-white text-primary-600 border-white": appearance === "white",
+          "hover:bg-indigo-600 hover:border-indigo-600 hover:text-white bg-white text-primary-600 border-white": appearance === "white",
         },
         // Specific to when the button is white outlines
         {
-          "text-white border-white": appearance === "white-outline",
+          "text-white hover:bg-indigo-600 hover:border-indigo-600 hover:text-white border-white": appearance === "white-outline",
         }
       )}
     >

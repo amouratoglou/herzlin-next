@@ -26,7 +26,7 @@ const CustomLink = ({ link, children }) => {
     >
       {children}
     </a>
-  );  
+  );
 }
 
 CustomLink.propTypes = {
