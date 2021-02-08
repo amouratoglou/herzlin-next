@@ -1,27 +1,4 @@
-# Strapi Starter Next Corporate Site
-
-Next starter for creating a corporate site with Strapi.
-
-[View the live demo](https://strapi-starter-next-corporate.vercel.app/) • [Read the blog post](https://strapi.io/blog/strapi-starter-next-corporate-site)
-
-![screen-website](/screenshot.png)
-
-This starter is designed for flexibility. Using it, you'll be able to manage your website content entirely in Strapi, and get a Next app automatically generated. Marketing teams will be able to create pages and design their layout without help from developers.
-
-This starter features:
-
-- Pages creation within Strapi, no code necessary
-- Fully flexible page structure: design the pages you want using UI Sections
-- 8 UI Sections out of the box: Hero, RichText, LargeVideo, Testimonials, Pricing, BottomActions, FeatureRows, FeatureColumns
-- Easy to theme with Tailwind
-- Static site generation with Next
-- An integrated Preview Mode, to view your pages on a private URL before publishing them
-
-## Getting started
-
-The easiest way to try this starter is to run it locally on your computer.
-
-First, you'll need to create your own copy of this starter. You can do so by clicking [the "Use this template" button](https://github.com/strapi/strapi-starter-next-corporate/generate) on GitHub, and filling the [form](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+# Herzlin Website powered by Strapi & Next
 
 ### Backend
 
@@ -108,5 +85,3 @@ And for the backend:
 
 - `FRONTEND_URL`: URL of your frontend, without trailing slash
 - `FRONTEND_PREVIEW_SECRET`: token of Next.js preview mode defined on the frontend
-
-Have fun using this starter!
