@@ -45,11 +45,13 @@ const TestimonialsGroup = ({ data }) => {
               {selectedTestimonial.authorTitle}
             </p>
           </div>
-          <CustomLink link={{ url: selectedTestimonial.link, text: '', newTab: false, id: 0 }}>
-            <span className="uppercase tracking-wide text-blue-700 hover:underline  with-arrow sm:self-end mt-6 sm:mt-0">
-              Read story
-            </span>
-          </CustomLink>
+          { selectedTestimonial.link &&
+            <CustomLink link={{ url: selectedTestimonial.link, text: '', newTab: false, id: 0 }}>
+              <span className="uppercase tracking-wide text-blue-700 hover:underline  with-arrow sm:self-end mt-6 sm:mt-0">
+                Read story
+              </span>
+            </CustomLink>
+          }
         </div>
       </div>
       {/* Change selected testimonial (only if there is more than one) */}
