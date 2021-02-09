@@ -11,12 +11,19 @@ const TestimonialsGroup = ({ data }) => {
   return (
     <section className="text-center text-lg bg-gray-200 pt-12 pb-16">
       <h2 className="title mb-4">{data.title}</h2>
+      <div class="container">
       <p className="text-gray-700 mb-4">{data.description}</p>
-      <CustomLink link={data.link}>
-        <span className="with-arrow text-blue-700 hover:underline">
-          {data.link.text}
-        </span>
-      </CustomLink>
+      </div>
+
+      {
+        data.link &&
+        <CustomLink link={data.link}>
+          <span className="with-arrow text-blue-700 hover:underline">
+            {data.link.text}
+          </span>
+        </CustomLink>
+      }
+
       {/* Current testimonial card */}
       <div className="max-w-5xl w-8/12 sm:w-8/12 bg-white shadow-md sm:shadow-xl mx-auto flex flex-col sm:flex-row mt-10 text-left">
         <Image
