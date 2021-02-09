@@ -15,6 +15,7 @@ const TestimonialsGroup = ({ data }) => {
       <p className="text-gray-700 mb-4">{data.description}</p>
       </div>
 
+      {/* Conditional rendering of link under description */}
       {
         data.link &&
         <CustomLink link={data.link}>
