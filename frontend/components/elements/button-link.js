@@ -42,6 +42,9 @@ const ButtonContent = ({ button, appearance, compact }) => {
 };
 
 const ButtonLink = ({ button, appearance, compact = false }) => {
+  if (button == null)  {
+    button = "#"
+  }
   return (
     <CustomLink link={button}>
       <ButtonContent button={button} appearance={appearance} compact={compact} />
